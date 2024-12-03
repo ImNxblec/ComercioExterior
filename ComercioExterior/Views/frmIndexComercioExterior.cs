@@ -29,11 +29,17 @@ namespace ComercioExterior.Views
             Application.Exit();
         }
 
-        private void btnAdmUsuarios_Click(object sender, EventArgs e)
+        private void btnAdmUsuarios_Click(object sender, EventArgs e)   
         {
             frmUsuarios usuarios = new frmUsuarios();
             usuarios.Show();
             this.Hide();
+        }
+
+        private void btnTransacciones_Click(object sender, EventArgs e)
+        {
+            frmTransaccion frm = new frmTransaccion();
+            frm.ShowDialog();
         }
     }
 }

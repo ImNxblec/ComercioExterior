@@ -33,12 +33,13 @@
             label1 = new Label();
             label2 = new Label();
             btnSalir = new Button();
+            btnTransacciones = new Button();
             SuspendLayout();
             // 
             // btnAdmPuertos
             // 
             btnAdmPuertos.Font = new Font("Segoe UI", 10F);
-            btnAdmPuertos.Location = new Point(88, 125);
+            btnAdmPuertos.Location = new Point(91, 107);
             btnAdmPuertos.Name = "btnAdmPuertos";
             btnAdmPuertos.Size = new Size(190, 54);
             btnAdmPuertos.TabIndex = 0;
@@ -49,7 +50,7 @@
             // btnAdmUsuarios
             // 
             btnAdmUsuarios.Font = new Font("Segoe UI", 10F);
-            btnAdmUsuarios.Location = new Point(88, 185);
+            btnAdmUsuarios.Location = new Point(91, 167);
             btnAdmUsuarios.Name = "btnAdmUsuarios";
             btnAdmUsuarios.Size = new Size(190, 54);
             btnAdmUsuarios.TabIndex = 1;
@@ -61,7 +62,7 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 16F);
-            label1.Location = new Point(98, 48);
+            label1.Location = new Point(101, 30);
             label1.Name = "label1";
             label1.Size = new Size(163, 30);
             label1.TabIndex = 2;
@@ -71,7 +72,7 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 10F);
-            label2.Location = new Point(129, 78);
+            label2.Location = new Point(132, 60);
             label2.Name = "label2";
             label2.Size = new Size(102, 19);
             label2.TabIndex = 3;
@@ -80,7 +81,7 @@
             // btnSalir
             // 
             btnSalir.Font = new Font("Segoe UI", 10F);
-            btnSalir.Location = new Point(115, 245);
+            btnSalir.Location = new Point(120, 287);
             btnSalir.Name = "btnSalir";
             btnSalir.Size = new Size(133, 42);
             btnSalir.TabIndex = 4;
@@ -88,11 +89,23 @@
             btnSalir.UseVisualStyleBackColor = true;
             btnSalir.Click += btnSalir_Click;
             // 
+            // btnTransacciones
+            // 
+            btnTransacciones.Font = new Font("Segoe UI", 10F);
+            btnTransacciones.Location = new Point(91, 227);
+            btnTransacciones.Name = "btnTransacciones";
+            btnTransacciones.Size = new Size(190, 54);
+            btnTransacciones.TabIndex = 5;
+            btnTransacciones.Text = "TRANSACCIONES";
+            btnTransacciones.UseVisualStyleBackColor = true;
+            btnTransacciones.Click += btnTransacciones_Click;
+            // 
             // frmIndexComercioExterior
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(358, 342);
+            Controls.Add(btnTransacciones);
             Controls.Add(btnSalir);
             Controls.Add(label2);
             Controls.Add(label1);
@@ -112,5 +125,6 @@
         private Label label1;
         private Label label2;
         private Button btnSalir;
+        private Button btnTransacciones;
     }
 }

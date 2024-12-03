@@ -163,6 +163,7 @@
             Controls.Add(panel2);
             Controls.Add(panel1);
             Name = "frmMantenimientoUsuarios";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "frmMantenimientoUsuarios";
             Load += frmMantenimientoUsuarios_Load;
             panel2.ResumeLayout(false);
